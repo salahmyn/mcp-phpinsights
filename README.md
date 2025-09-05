@@ -102,7 +102,7 @@ With an MCP-compatible extension, you can:
 
 ## 🛠️ Available Tools
 
-### `phpinsights.run`
+### `phpinsights_run`
 
 Runs comprehensive PHP code analysis and returns detailed results.
 
@@ -118,7 +118,7 @@ Runs comprehensive PHP code analysis and returns detailed results.
 "Run PHP Insights analysis on my project and show me the results"
 ```
 
-### `phpinsights.summary`
+### `phpinsights_summary`
 
 Generates human-readable summaries perfect for AI conversations.
 
@@ -144,7 +144,7 @@ Generates human-readable summaries perfect for AI conversations.
 3. models/Product.php:8 - Missing type declaration
 ```
 
-### `phpinsights.fix`
+### `phpinsights_fix`
 
 Applies automated fixes to common code quality issues.
 

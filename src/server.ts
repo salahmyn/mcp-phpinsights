@@ -29,7 +29,7 @@ const toolHandlers = new ToolHandlers();
  * Register tools with the server
  */
 server.registerTool(
-  "phpinsights.run",
+  "phpinsights_run",
   {
     title: "PHP Insights Analysis",
     description: "Run PHP Insights analysis on a PHP project and return raw JSON results",
@@ -41,7 +41,7 @@ server.registerTool(
 );
 
 server.registerTool(
-  "phpinsights.summary",
+  "phpinsights_summary",
   {
     title: "PHP Insights Summary",
     description: "Run PHP Insights analysis and return a human-readable summary with top issues",
@@ -53,7 +53,7 @@ server.registerTool(
 );
 
 server.registerTool(
-  "phpinsights.fix",
+  "phpinsights_fix",
   {
     title: "PHP Insights Fix",
     description: "Run PHP Insights with automatic fixes (experimental feature)",
@@ -101,6 +101,31 @@ server.registerResource(
  * Start the server
  */
 async function main(): Promise<void> {
+  // Handle version flag
+  if (process.argv.includes("--version") || process.argv.includes("-v")) {
+    console.log("1.0.0");
+    process.exit(0);
+  }
+
+  // Handle help flag
+  if (process.argv.includes("--help") || process.argv.includes("-h")) {
+    console.log(`
+PHP Insights MCP Server v1.0.0
+
+A Model Context Protocol server that provides comprehensive PHP code analysis using PHP Insights.
+
+Usage:
+  mcp-phpinsights [options]
+
+Options:
+  --version, -v    Show version number
+  --help, -h       Show this help message
+
+For more information, visit: https://github.com/your-username/mcp-phpinsights
+`);
+    process.exit(0);
+  }
+
   try {
     const transport = new StdioServerTransport();
     await server.connect(transport);
