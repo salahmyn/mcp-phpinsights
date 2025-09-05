@@ -1,0 +1,89 @@
+{
+  "name": "mcp-phpinsights",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mcp-phpinsights": "dist/server.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage --reporter=verbose",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "php",
+    "phpinsights",
+    "code-analysis",
+    "model-context-protocol",
+    "ai",
+    "llm",
+    "code-quality",
+    "static-analysis",
+    "php-linting",
+    "claude",
+    "chatgpt",
+    "ai-tools"
+  ],
+  "author": {
+    "name": "PHP Insights MCP Server Contributors",
+    "url": "https://github.com/your-username/mcp-phpinsights"
+  },
+  "license": "MIT",
+  "description": "A professional Model Context Protocol (MCP) server that provides comprehensive PHP code analysis using PHP Insights. Integrates PHP code quality analysis into AI-powered development workflows.",
+  "homepage": "https://github.com/your-username/mcp-phpinsights#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/mcp-phpinsights.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/mcp-phpinsights/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "execa": "^9.6.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/execa": "^2.0.2",
+    "@types/node": "^24.3.1",
+    "@vitest/coverage-istanbul": "^3.2.4",
+    "@vitest/coverage-v8": "3.2.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
