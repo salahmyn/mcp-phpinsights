@@ -3,6 +3,7 @@
 [![npm version](https://badge.fury.io/js/mcp-phpinsights.svg)](https://badge.fury.io/js/mcp-phpinsights)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-salahmyn%2Fmcp--phpinsights-blue.svg)](https://github.com/salahmyn/mcp-phpinsights)
 
 A Model Context Protocol (MCP) server that brings [PHP Insights](https://phpinsights.com/) code analysis directly into **Cursor** and **VS Code**. Get AI-powered PHP code quality insights, automated fixes, and detailed analysis reports right in your favorite editor.
 
@@ -425,9 +426,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/your-username/mcp-phpinsights/issues)
-- 💡 **Feature Requests**: [Open an issue](https://github.com/your-username/mcp-phpinsights/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/your-username/mcp-phpinsights/discussions)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/salahmyn/mcp-phpinsights/issues)
+- 💡 **Feature Requests**: [Open an issue](https://github.com/salahmyn/mcp-phpinsights/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/salahmyn/mcp-phpinsights/discussions)
 - 📖 **Documentation**: Check the [examples](examples/) folder for more usage examples
 
 When reporting issues, please include:

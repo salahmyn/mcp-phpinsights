@@ -50,18 +50,18 @@
     "ai-tools"
   ],
   "author": {
-    "name": "PHP Insights MCP Server Contributors",
-    "url": "https://github.com/your-username/mcp-phpinsights"
+    "name": "Salah Alnawah",
+    "url": "https://github.com/salahmyn"
   },
   "license": "MIT",
   "description": "A professional Model Context Protocol (MCP) server that provides comprehensive PHP code analysis using PHP Insights. Integrates PHP code quality analysis into AI-powered development workflows.",
-  "homepage": "https://github.com/your-username/mcp-phpinsights#readme",
+  "homepage": "https://github.com/salahmyn/mcp-phpinsights#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/mcp-phpinsights.git"
+    "url": "git+https://github.com/salahmyn/mcp-phpinsights.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/mcp-phpinsights/issues"
+    "url": "https://github.com/salahmyn/mcp-phpinsights/issues"
   },
   "engines": {
     "node": ">=18.0.0"
